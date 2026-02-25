@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 16px;
+      }
+
+      form {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+
+      #result {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Currency Converter</h3>
+    <form id="convert-form">
+      <input
+        id="amount"
+        type="number"
+        step="0.01"
+        placeholder="Amount"
+        required
+      />
+      <select id="from"></select>
+      <select id="to"></select>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="EX3.js"></script>
+  </body>
+</html>

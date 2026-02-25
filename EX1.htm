@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 16px;
+      }
+
+      h3 {
+        margin: 0 0 10px;
+      }
+
+      #todo-list {
+        list-style: none;
+        padding: 0;
+        margin: 12px 0 24px;
+        display: grid;
+        gap: 8px;
+      }
+
+      .todo-item {
+        border: 1px solid #111;
+        padding: 8px 10px;
+        background: #fff;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .todo-title {
+        flex: 1;
+      }
+
+      .todo-completed {
+        text-decoration: line-through;
+        opacity: 0.7;
+      }
+
+      .todo-actions button {
+        padding: 4px 8px;
+        border: 1px solid #111;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      #load-btn,
+      form button {
+        padding: 6px 10px;
+        border: 1px solid #111;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      #message {
+        margin: 8px 0;
+        color: #0a5c2b;
+        font-weight: bold;
+      }
+
+      form {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="load-btn">Afficher</button>
+    <div id="message"></div>
+    <ul id="todo-list"></ul>
+    <form id="todos">
+      <input id="userId" type="number" placeholder="userId" required />
+      <input id="title" type="text" placeholder="title" required />
+      <label>
+        <select id="completed">
+          <option value="true">completed</option>
+          <option value="false">not_completed</option>
+        </select>
+      </label>
+      <button type="submit">Envoyer</button>
+    </form>
+    <script src="EX1.js"></script>
+  </body>
+</html>
